@@ -1,36 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favico/favicon.ico"
+      type="image/x-icon"
+    />
+    <script defer src="./main.js"></script>
+    <title>Rocketflix</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="./assets/favico/favicon.ico" type="image/x-icon">
-  <title>Rocketflix</title>
-</head>
+  <body>
+    <main>
+      <div id="container">
+        <div id="title">
+          <img src="./assets/shuffle.svg" alt="shuffle" />
+          <h2>Não sabe o que assistir?</h2>
+        </div>
 
-<body>
-  <script type="module" src="main.js"></script>
+        <div id="filme">
+          <div id="dados-filme">
+            <img
+              src="https://image.tmdb.org/t/p/w500/jYtNUfMbU6DBbmd4LUS19u4hF4p.jpg"
+              alt="poster filme"
+              id="poster"
+            />
+            <div id="titulo-descricao">
+              <span id="titulo-filme">Star Trek: Insurreição</span>
+              <span id="descricao-filme">
+                No planeta Ba'ku, apenas 600 habitantes, uma estação
+                arqueológica da Federação em conjunto com a raça So'na é atacada
+                pelo tenente-comandante Data, enviado para observações. Mandado
+                para investigar, Picard recebe a ordem de atacar o planeta, mas
+                ele decide revoltar-se. O motivo do ataque: os So'na e a
+                Federação querem a fonte da juventude que existe em Ba'ku.
+              </span>
+            </div>
+          </div>
+        </div>
 
-  <div id="title">
-    <img src="./assets/shuffle.svg" alt="shuffle">
-    <h2>Não sabe o que assistir?</h2>
-  </div>
+        <button id="botao" onclick="console.log('a')">
+          <img src="./assets/favico/favicon-16x16.png" alt="" />
+          Encontrar filme
+        </button>
 
-  <div id="film">
-    
-  </div>
-
-  <button id="botao"><img src="./assets/favico/favicon-16x16.png" alt="">Encontrar filme</button>
-
-  <p>
-    Clique em "Encontrar filme" que traremos informações
-    de algum filme para você assistir hoje.
-  </p>
-</body>
-
+        <p id="mensagem">
+          Clique em "Encontrar filme" que traremos informações de algum filme
+          para você assistir hoje.
+        </p>
+      </div>
+    </main>
+  </body>
 </html>

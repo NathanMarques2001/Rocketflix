@@ -1,27 +1,41 @@
 :root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
+  background: linear-gradient(
+    37.19deg,
+    #1e46a3 3.83%,
+    #000000 50.5%,
+    #c12a23 85.86%
+  );
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(
-    43deg,
-    #102d71 0%,
-    #000000 52%,
-    #c12a23 100%
-  );
-  background-repeat: no-repeat;
-  height: 100vh;
+  width: 100%;
+  max-width: 600px;
 }
 
 #title {
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60vh;
+  width: 100%;
   height: 13vh;
 }
 
@@ -43,10 +57,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7vh;
+  margin-top: 4vh;
   padding: 11px;
-  height: 6vh;
-  width: 23vh;
+  height: 15%;
+  width: 40%;
   border-radius: 5px;
   font-weight: bold;
   background-color: #e9e6e3;
@@ -56,8 +70,65 @@ button img {
   margin-right: 8px;
 }
 
-p {
-  color: #b3b3b3;
-  width: 68vh;
+button:active {
+  font-size: 0.7rem;
+  background-color: gray;
+}
+
+p,
+span {
+  color: #fffcf9;
+  word-wrap: break-word;
+}
+
+#mensagem {
   text-align: center;
+  font-size: 12px;
+}
+
+#poster {
+  width: 30%;
+  min-width: 200px;
+  margin-right: 5%;
+}
+
+#dados-filme {
+  margin-top: 5%;
+  display: flex;
+  width: 90%;
+}
+
+#titulo-descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#titulo-filme {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+#descricao-filme {
+  font-size: 16px;
+}
+#filme {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 599px) {
+  #dados-filme {
+    flex-direction: column;
+    align-items: center;
+  }
+  #titulo-filme {
+    width: 100%;
+    margin-top: 1vh;
+    text-align: center;
+  }
+  #descricao-filme {
+    text-align: center;
+  }
 }
